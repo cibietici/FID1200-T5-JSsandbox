@@ -18,9 +18,9 @@ age = 33;
 
 
 // her bruker vi variabel firstName flere ganger
-console.log(firstName + ' er ikke sliten fordi er 43');
-console.log(firstName + ' begynner å bli sliten 43');
-console.log(firstName + ' dra hjem 43');
+console.log(firstName + ' er ikke sliten fordi er ' + age);
+console.log(firstName + ' begynner å bli sliten');
+console.log(firstName + ' dra hjem');
 
 // her bruker vi const for itialisere en variabel med snake case standard
 // ikke lov å bruke nummer og bindestrek i variabler navn
