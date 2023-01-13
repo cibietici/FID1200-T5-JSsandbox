@@ -8,13 +8,13 @@ firstName = 'Carlo';
 
 // vi bruker keyword const for initialisere ny variabel newName
 // vi bruker camel case standard
-const newName = 'Jonas';
+const newName = 'Anders';
 // newName = 'Jens'; det er ikke lov å endre verdi av const
 
 // en til keyword for initialisere variabler: let
 let age = 32;
 // det er lov å endre variabler initialisert som let
-age = 33;
+age = 67;
 
 
 // her bruker vi variabel firstName flere ganger
@@ -27,7 +27,7 @@ console.log(firstName + ' dra hjem');
 const new_named = 'johnson';
 
 // neste kommando ta borte alle tidligere console.log
-console.clear();
+//console.clear();
 ///////////////////////////////////
 
 // syntax for å skrive funksjoner (function expression)
@@ -62,10 +62,106 @@ plotValue('carlo');
 
 
 // vi invoke funksjonen ved å sende inn 3 verdi for alder
-averageAge(26, 65, 42);
+averageAge(298, 650, 412);
 
-
-function averageAge(a, b, c) {
+function averageAge(a, b, c) { // void
     const totalAge = a + b + c;
     console.log(totalAge / 3);
 };
+
+console.clear();
+
+const myAge = 44 // number
+const yourAge = 56 // number
+
+const yourName = 'Pål'; // string
+
+const isLoggedIn = false; // boolean
+
+console.log(isLoggedIn);
+
+let mouse;
+console.log(mouse); // undefined
+
+let keyboard = null;
+
+console.log(myAge + yourAge);
+// 
+
+console.log(20 >= 20);
+
+console.clear();
+
+if (10 < 5) {
+    //alert('Ja 10 e større enn 5');
+} else {
+    //alert('nei 10 er mindre enn 5');
+}
+console.clear();
+
+// å sjekke om butikken er åpent eller stengt akkurat nå
+
+function checkOpeningTime() {
+
+    // 1 tidspunkt for åpning
+    const openingTime = 17;
+    // 2 tidspunkt for å stenge
+    const closingTime = 23;
+    // 3 tid nå
+    const today = new Date();
+    // 4 stengt dager
+    const timeNow = today.getHours();
+    //
+    if(timeNow > openingTime && timeNow < closingTime) {
+        alert('Butikken er åpent!');
+    } else {
+        alert('butikken er stengt')
+    }
+}
+
+//checkOpeningTime();
+
+
+// bytter mellom darkmode og lightmode
+
+// mode value
+
+function switchMode(status) {
+    if(status === 'light') {
+        alert('Du valgt lightmode');
+    } else {
+        alert('du er i darkmode')
+    }
+};
+
+const myStatus = 'light';
+let oneSattus = 'light';
+
+//switchMode(oneSattus);
+
+
+// kalkulere omkrets av en sirkel ved diameter verdi
+
+function calculateCircle(diameter) {
+    // 2PIr // diameter*PI
+    const pi = Math.PI;
+    const result = diameter * pi
+    console.log(Math.ceil(result));
+}
+
+calculateCircle(13);
+
+// lag en funksjon som console.log areal av en rektangel
+// ved å gi høy og bredde verdi
+
+function calculateRectangle(width, height) {
+    console.log(width * height)
+};
+
+calculateRectangle(13, 7);
+
+function calculateTriangle(width, height) {
+    console.log((width * height) / 2)
+};
+
+calculateTriangle(22, 43);
