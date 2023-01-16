@@ -165,3 +165,44 @@ function calculateTriangle(width, height) {
 };
 
 calculateTriangle(22, 43);
+
+console.clear();
+
+console.log(document);
+
+const section1Element = document.querySelector('section');
+console.log(section1Element);
+
+const headerElement = document.querySelector('header'); // via tag navn
+console.log(headerElement);
+
+const pElement = document.querySelector('div p'); // children og parent
+console.log(pElement);
+
+// querySelector med klassenavn
+const p3Element = document.querySelector('.p-3'); 
+console.log(p3Element);
+
+p3Element.textContent = 'We change this to P-3000';
+// innerText er ikke forslag av VS code
+p3Element.innerText = 'With inner text' 
+
+// querySelector med id
+const p4Element = document.querySelector('#p-4');
+console.log(p4Element);
+
+// via getElementById
+const p4ElementById = document.getElementById('p-4');
+console.log(p4ElementById);
+
+// querySelectorAll
+const allPElement = document.querySelectorAll('.p-3');
+console.log(allPElement);
+
+allPElement[1].textContent = 'the last one';
+
+//
+
+// hente fra document h1 og lagre den i in const
+
+
