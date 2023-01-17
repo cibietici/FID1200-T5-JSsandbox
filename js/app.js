@@ -166,7 +166,7 @@ function calculateTriangle(width, height) {
 
 calculateTriangle(22, 43);
 
-console.clear();
+console.clear(); // clear hele console frem til her
 
 console.log(document);
 
@@ -202,7 +202,3 @@ console.log(allPElement);
 allPElement[1].textContent = 'the last one';
 
 //
-
-// hente fra document h1 og lagre den i in const
-
-
