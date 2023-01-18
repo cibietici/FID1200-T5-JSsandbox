@@ -39,12 +39,13 @@ const logName = (plotName) => { // arrow function
 
 logName('Carlo');
 
-//////////
-const value1 = prompt('skriv her først verdi');
-console.log(value1);
-const value2 = prompt('skriv her andre verdi');
-console.log(value2);
+////////// Enkelt kalkulator
+//const value1 = prompt('skriv her først verdi');
+//console.log(value1);
+//const value2 = prompt('skriv her andre verdi');
+//console.log(value2);
 
+/* 
 const action = prompt('operator');
 
 const resultElement = document.querySelector('#result');
@@ -57,3 +58,29 @@ if(action === 'multiply') {
 if(action === 'divide') {
     console.log(value1 / value2);
 }
+ */
+
+// bygge html elementer med JavaScript
+
+const pElementCreate = document.createElement('p');
+pElementCreate.textContent = 'dette <p> bygget vi JavaScript';
+console.log(pElementCreate);
+
+const parentBodyElement = document.getElementById('body');
+parentBodyElement.append(pElementCreate);
+
+console.log(parentBodyElement);
+
+const h2ContainerCreate = document.createElement('h2');
+h2ContainerCreate.textContent = 'tittel til div container';
+// append fungerer også med string resultat er helt like som textContent
+//h2ContainerCreate.append('en tittel til h2'); 
+
+const boxContainerElement = document.querySelector('.container');
+// appendChild akseptere bare node elementer
+//boxContainerElement.appendChild(h2ContainerCreate);
+boxContainerElement.prepend(h2ContainerCreate);  
+
+const whoIsParent = h2ContainerCreate.parentNode; // treffer parent node html element
+console.log(whoIsParent);
+
