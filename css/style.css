@@ -23,3 +23,18 @@ header nav ul {
     display: flex;  
     gap: 10px;
 }
+
+.p-element {
+    color: #f00;
+}
+
+.new-class {
+    color: rgb(119, 22, 194);
+}
+
+.link {
+    background-color: brown;
+    padding: 1.5rem;
+    border-radius: 0.4rem;
+    color: #fff;
+}
