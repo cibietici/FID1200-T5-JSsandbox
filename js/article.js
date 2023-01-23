@@ -11,6 +11,7 @@ const imgElement = document.createElement('img');
 imgElement.src = './assets/image1.jpg';
 imgElement.alt = 'Vulkan bilde';
 
+
 // bygge en paragraph og legge inn en tekst
 const pElement = document.createElement('p');
 pElement.textContent = `Lorem ipsum dolor sit, amet 
@@ -33,12 +34,21 @@ bodyElement.appendChild(pElement);
 const ulElement = document.createElement('ul');
 
 // loop med for
-for(let i = 1; i <= 24; i++) {
-    console.log(i);
-    const liElement = document.createElement('li');
-    liElement.textContent = 'Item ' + i;
-    ulElement.appendChild(liElement);
-}
+for(let i = 1; i <= 18; i++) {
+    if(i % 2 === 0) {
+        console.log(i);
+        const liElement = document.createElement('li');
+        liElement.textContent = 'Item ' + i;
+        ulElement.appendChild(liElement);
+    }
+};
+
+// loop med do, while
+let i = 1;
+do { // gjenta prosessen så mange gange som linje 51 foreslå
+    console.log(i)
+    i++;
+} while (i <= 18); // krav for slutte loop prosessen
 
 console.log(ulElement);
-bodyElement.appendChild(ulElement)
+bodyElement.appendChild(ulElement);
