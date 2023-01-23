@@ -60,7 +60,6 @@ plotValue('carlo');
 //////////
 // finner gjennomsnitt alder av en gruppe med fire personer
 
-
 // vi invoke funksjonen ved å sende inn 3 verdi for alder
 averageAge(298, 650, 412);
 
@@ -111,7 +110,9 @@ function checkOpeningTime() {
     const today = new Date();
     // 4 stengt dager
     const timeNow = today.getHours();
-    //
+    // vi bruker operaator for å sette en krav
+    // hvis krav er tilfredstillet så faller inn i 
+    // den if ... else faller vi inn i 119.
     if(timeNow > openingTime && timeNow < closingTime) {
         alert('Butikken er åpent!');
     } else {
@@ -121,11 +122,7 @@ function checkOpeningTime() {
 
 //checkOpeningTime();
 
-
 // bytter mellom darkmode og lightmode
-
-// mode value
-
 function switchMode(status) {
     if(status === 'light') {
         alert('Du valgt lightmode');
@@ -138,7 +135,6 @@ const myStatus = 'light';
 let oneSattus = 'light';
 
 //switchMode(oneSattus);
-
 
 // kalkulere omkrets av en sirkel ved diameter verdi
 
@@ -168,6 +164,8 @@ calculateTriangle(22, 43);
 
 console.clear(); // clear hele console frem til her
 
+
+//DOM håndtering
 console.log(document);
 
 const section1Element = document.querySelector('section');
@@ -200,7 +198,4 @@ const allPElement = document.querySelectorAll('.p-3');
 console.log(allPElement);
 
 allPElement[1].textContent = 'the last one';
-
 //
-
-

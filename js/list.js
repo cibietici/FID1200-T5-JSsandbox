@@ -1,6 +1,5 @@
-console.log('list');
-
-// best pratice
+// bruk gjerne en init funksjon for å unngå at variabler navn blander seg 
+// med andre JavaScript filer 
 function initList() {
     
     const bodyElement = document.querySelector('body');

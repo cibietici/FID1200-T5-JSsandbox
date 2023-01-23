@@ -1,3 +1,7 @@
+html {
+    font-size: 100%;
+}
+
 body {
     background-color: azure;
 }
@@ -37,4 +41,18 @@ header nav ul {
     padding: 1.5rem;
     border-radius: 0.4rem;
     color: #fff;
+}
+
+ul {
+    background-color: darkgray;
+    padding: 2rem;
+    font-size: 1.5rem;
+}
+
+ul li {
+    background-color: #f00;
+}
+
+ul li:nth-child(odd) {
+    background-color: blanchedalmond;
 }

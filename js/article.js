@@ -35,7 +35,7 @@ const ulElement = document.createElement('ul');
 
 // loop med for
 for(let i = 1; i <= 18; i++) {
-    // bruk modulo eller remainder for å skive ut bare partall
+    // bruk modulo eller "remainder" for å skive ut bare partall
     if(i % 2 === 0) {
         console.log(i);
         const liElement = document.createElement('li');
@@ -44,9 +44,9 @@ for(let i = 1; i <= 18; i++) {
     }
 };
 
-// loop med do, while
+// loop med do, while metode
 let i = 1;
-do { // gjenta prosessen så mange gange som linje 51 foreslå
+do { // gjenta prosessen så mange gange som linje 52 foreslå
     console.log(i)
     i++;
 } while (i <= 18); // krav for slutte loop prosessen

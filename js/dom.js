@@ -13,7 +13,7 @@ h1Element.style = 'color: #ff0000';
 
 function changeImg() { // function expression type void
     console.log(firstName);
-    const lastName = 'Normann';
+    const lastName = 'Normann'; // block scope variabel
     const imgElement = document.querySelector('img');
     imgElement.src = './assets/image2.jpg';
     //imgElement.width = '240';
@@ -22,7 +22,9 @@ function changeImg() { // function expression type void
     imgElement.style = 'transform: scale(0.5); transform-origin: top left;'
 }
 
-plotName(); // dette er lov å gjøre
+plotName(); 
+// invoke function expression, 
+// før at selve funksjon er skrevet, er det lov å gjøre
 
 function plotName() {
     const lastName = 'Normann';
@@ -46,9 +48,9 @@ logName('Carlo');
 //console.log(value2);
 
 /* 
-const action = prompt('operator');
 
 const resultElement = document.querySelector('#result');
+const action = prompt('operator');
 
 if(action === 'multiply') {
     console.log(value1 * value2);
@@ -81,6 +83,7 @@ const boxContainerElement = document.querySelector('.container');
 //boxContainerElement.appendChild(h2ContainerCreate);
 boxContainerElement.prepend(h2ContainerCreate);  
 
-const whoIsParent = h2ContainerCreate.parentNode; // treffer parent node html element
+const whoIsParent = h2ContainerCreate.parentNode; 
+// treffer parent node html element
 console.log(whoIsParent);
 
