@@ -35,6 +35,7 @@ const ulElement = document.createElement('ul');
 
 // loop med for
 for(let i = 1; i <= 18; i++) {
+    // bruk modulo eller remainder for å skive ut bare partall
     if(i % 2 === 0) {
         console.log(i);
         const liElement = document.createElement('li');
