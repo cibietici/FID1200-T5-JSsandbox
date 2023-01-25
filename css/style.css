@@ -3,7 +3,14 @@ html {
 }
 
 body {
-    background-color: azure;
+    background-color: rgb(115, 227, 227);
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    flex-flow: column nowrap;
+    gap: 1rem;
+    justify-content: center;
+    align-items: center;
 }
 
 
@@ -55,4 +62,38 @@ ul li {
 
 ul li:nth-child(odd) {
     background-color: blanchedalmond;
+}
+
+/* events */
+.box {
+    width: 300px;
+    height: 240px;
+    border: 0.4rem solid #000;
+    background-color: beige;
+}
+
+select {
+    padding: 0.8rem;
+    font-size: 2rem;
+}
+
+.blue {
+    background-color: blue;
+}
+
+.green {
+    background-color: green;
+}
+
+.red {
+    background-color: red;
+}
+
+input[type="text"], button {
+    padding: 1rem;
+    font-size: 2rem;
+}
+
+p {
+    font-size: 2rem;
 }

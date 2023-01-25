@@ -29,7 +29,7 @@ bodyElement.appendChild(imgElement);
 bodyElement.appendChild(pElement);
 
 // listen
-
+//___________________
 // lage hoved container ul (unordered list)
 const ulElement = document.createElement('ul');
 
@@ -53,3 +53,5 @@ do { // gjenta prosessen så mange gange som linje 52 foreslå
 
 console.log(ulElement);
 bodyElement.appendChild(ulElement);
+
+
