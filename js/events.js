@@ -58,7 +58,3 @@ function initEvent() {
 
 changeBox();
 initEvent();
-
-
-
-

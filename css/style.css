@@ -97,3 +97,7 @@ input[type="text"], button {
 p {
     font-size: 2rem;
 }
+
+.body-color {
+    background-color: blueviolet;
+}
