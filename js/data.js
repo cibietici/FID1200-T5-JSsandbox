@@ -251,4 +251,80 @@ const employees = [
         },
         email: 'bm@firma.no'
     },
+    {
+        person: {
+            firstName: 'James',
+            lastName: 'Melby',
+            age: 42,
+            dob: '1981-11-03',
+            nationality: 'Danish'
+        },
+        department: [
+            'shipping'
+        ],
+        address: {
+            street: 'Hvittvei',
+            streetNumber: 32,
+            city: 'Drammen'
+        },
+        email: 'bm@firma.no'
+    },
 ]
+
+// forEach
+
+const bodyElement = document.querySelector('body');
+const ulElement = document.createElement('ul');
+
+employees.forEach(employee => {
+    const liElement = document.createElement('li');
+    liElement.textContent = `
+        ${employee.person.firstName} 
+        ${employee.person.lastName}
+        (${employee.department[0]}) epost: ${employee.email}
+        `;
+    ulElement.appendChild(liElement);
+});
+
+bodyElement.appendChild(ulElement);
+
+// map
+const employeeEmails = employees.map(person => {
+    return {
+        epost: person.email,
+        dob: person.person.dob
+    }
+});
+
+console.log(employeeEmails);
+
+// filter
+const nationalityEmployees = employees.filter(employee => {
+    return employee.person.nationality === 'Danish';
+});
+console.log(nationalityEmployees);
+
+const filterDepEmployees = employees.filter(
+        employee => employee.department.includes('shipping')
+    )
+console.log(filterDepEmployees);
+
+const Ul1Element = document.createElement('ul')
+filterDepEmployees.forEach(employee => {
+    const liElement = document.createElement('li');
+    liElement.textContent = `
+        ${employee.person.firstName} 
+        ${employee.person.lastName}
+        (${employee.department[0]}) epost: ${employee.email}
+        `;
+    Ul1Element.appendChild(liElement);
+});
+
+bodyElement.appendChild(Ul1Element);
+
+// find
+const findedEmail = employees.find(employee => {
+    return employee.email === 'os@firma.no'
+})
+
+console.log(findedEmail)
