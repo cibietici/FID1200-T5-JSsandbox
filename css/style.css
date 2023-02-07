@@ -3,10 +3,10 @@ html {
 }
 
 body {
-    background-color: rgb(115, 227, 227);
+    /*background-color: rgb(115, 227, 227);*/
     width: 100vw;
     height: 100vh;
-    display: flex;
+    /*display: flex;*/
     flex-flow: column nowrap;
     gap: 1rem;
     justify-content: center;
@@ -61,7 +61,7 @@ ul li {
 }
 
 ul li:nth-child(odd) {
-    background-color: blanchedalmond;
+    background-color: rgb(118, 80, 22);
 }
 
 /* events */
@@ -100,4 +100,31 @@ p {
 
 .body-color {
     background-color: blueviolet;
+}
+
+/* flex */
+
+.flex-container {
+    background-color: burlywood;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    gap: 0.6rem;
+    height: 100vh;
+    align-items: center;
+}
+
+.flex-item {
+    padding: 1rem;
+    font-size: 2rem;
+    background-color: darkolivegreen;
+    width: 10rem;
+    height: 8rem;
+    color: #fff;
+    width: 100vw;
+}
+
+.flex-item-2 {
+    height: 20rem;
 }
