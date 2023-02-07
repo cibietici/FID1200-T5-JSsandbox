@@ -1,4 +1,4 @@
-const persons = {
+export const collection = {
     results: [
       {
         gender: "male",

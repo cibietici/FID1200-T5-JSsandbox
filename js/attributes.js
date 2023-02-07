@@ -1,4 +1,4 @@
-const h1Element = document.querySelector('h1');
+const h1Element = document.querySelector('h1'); // "select" via tag navn
 
 h1Element.id = '128736'; // gammel måte å sette en attribute
 /*
@@ -37,7 +37,7 @@ attrValue.value = 'background-color: #fcf0f0; padding: 1rem';
 pElement.setAttributeNode(attrValue);
 
 // classList: best practice for håndtering av class i elementer
-linkElement.classList.add('link');
-h1Element.classList.toggle('link');
-h1Element.classList.remove('link');
-h1Element.classList.replace('title', 'link');
+linkElement.classList.add('link'); // legge til klasse "link"
+h1Element.classList.toggle('link'); // sjekk om "link" klasse eksistere elle ikke og legge til om ikke finnes, fjerne om det er allerede
+h1Element.classList.remove('link'); // fjern klasse "link"
+h1Element.classList.replace('title', 'link'); // erstatt klasse "title" med "link"
